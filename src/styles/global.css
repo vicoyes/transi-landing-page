@@ -26,3 +26,21 @@
 	background: #E5D4B8;
 	border-radius: 3px;
 }
+
+.calendar-grid {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+	width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+	background: #E5D4B8;
+	border-radius: 10px;
+}

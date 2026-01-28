@@ -1,0 +1,110 @@
+---
+---
+
+<div class="lg:col-span-7 bg-white rounded-3xl shadow-sm border border-gold/10 overflow-hidden flex flex-col md:flex-row min-h-[600px]">
+	<!-- Calendar + slots -->
+	<div class="flex-1 p-8 border-b md:border-b-0 md:border-r border-gold/10">
+		<div class="flex items-center justify-between mb-8">
+			<h3 class="font-serif text-xl text-text-main">Selecciona Fecha</h3>
+			<div class="flex gap-2">
+				<button type="button" class="p-2 hover:bg-cream rounded-full transition-colors" aria-label="Mes anterior">
+					<span class="material-symbols-outlined text-sm">chevron_left</span>
+				</button>
+				<button type="button" class="p-2 hover:bg-cream rounded-full transition-colors" aria-label="Mes siguiente">
+					<span class="material-symbols-outlined text-sm">chevron_right</span>
+				</button>
+			</div>
+		</div>
+		<div class="calendar-grid text-center text-xs uppercase tracking-widest text-text-main font-bold mb-3">
+			<div class="aspect-square flex items-center justify-center">Lun</div>
+			<div class="aspect-square flex items-center justify-center">Mar</div>
+			<div class="aspect-square flex items-center justify-center">Mié</div>
+			<div class="aspect-square flex items-center justify-center">Jue</div>
+			<div class="aspect-square flex items-center justify-center">Vie</div>
+			<div class="aspect-square flex items-center justify-center">Sáb</div>
+			<div class="aspect-square flex items-center justify-center">Dom</div>
+		</div>
+		<div class="calendar-grid gap-y-1 gap-x-0">
+			<div class="aspect-square flex items-center justify-center text-sm text-gray-300">28</div>
+			<div class="aspect-square flex items-center justify-center text-sm text-gray-300">29</div>
+			<div class="aspect-square flex items-center justify-center text-sm text-gray-300">30</div>
+			<div class="aspect-square flex items-center justify-center"><span class="w-9 h-9 flex items-center justify-center text-sm font-medium text-text-main hover:bg-primary-soft/40 cursor-pointer rounded-full transition-colors">1</span></div>
+			<div class="aspect-square flex items-center justify-center"><span class="w-9 h-9 flex items-center justify-center text-sm font-medium text-text-main hover:bg-primary-soft/40 cursor-pointer rounded-full transition-colors">2</span></div>
+			<div class="aspect-square flex items-center justify-center text-sm text-gray-300">3</div>
+			<div class="aspect-square flex items-center justify-center text-sm text-gray-300">4</div>
+			<div class="aspect-square flex items-center justify-center"><span class="w-9 h-9 flex items-center justify-center text-sm font-medium text-text-main hover:bg-primary-soft/40 cursor-pointer rounded-full transition-colors">5</span></div>
+			<div class="aspect-square flex items-center justify-center"><span class="w-9 h-9 flex items-center justify-center text-sm font-medium text-text-main hover:bg-primary-soft/40 cursor-pointer rounded-full transition-colors">6</span></div>
+			<div class="aspect-square flex items-center justify-center"><span class="w-9 h-9 flex items-center justify-center text-sm font-medium bg-primary text-white rounded-full">7</span></div>
+			<div class="aspect-square flex items-center justify-center"><span class="w-9 h-9 flex items-center justify-center text-sm font-medium text-text-main hover:bg-primary-soft/40 cursor-pointer rounded-full transition-colors">8</span></div>
+			<div class="aspect-square flex items-center justify-center"><span class="w-9 h-9 flex items-center justify-center text-sm font-medium text-text-main hover:bg-primary-soft/40 cursor-pointer rounded-full transition-colors">9</span></div>
+			<div class="aspect-square flex items-center justify-center text-sm text-gray-300">10</div>
+			<div class="aspect-square flex items-center justify-center text-sm text-gray-300">11</div>
+			<div class="aspect-square flex items-center justify-center"><span class="w-9 h-9 flex items-center justify-center text-sm font-medium text-text-main hover:bg-primary-soft/40 cursor-pointer rounded-full transition-colors">12</span></div>
+			<div class="aspect-square flex items-center justify-center"><span class="w-9 h-9 flex items-center justify-center text-sm font-medium text-text-main hover:bg-primary-soft/40 cursor-pointer rounded-full transition-colors">13</span></div>
+			<div class="aspect-square flex items-center justify-center"><span class="w-9 h-9 flex items-center justify-center text-sm font-medium text-text-main hover:bg-primary-soft/40 cursor-pointer rounded-full transition-colors">14</span></div>
+			<div class="aspect-square flex items-center justify-center"><span class="w-9 h-9 flex items-center justify-center text-sm font-medium text-text-main hover:bg-primary-soft/40 cursor-pointer rounded-full transition-colors">15</span></div>
+			<div class="aspect-square flex items-center justify-center"><span class="w-9 h-9 flex items-center justify-center text-sm font-medium text-text-main hover:bg-primary-soft/40 cursor-pointer rounded-full transition-colors">16</span></div>
+			<div class="aspect-square flex items-center justify-center text-sm text-gray-300">17</div>
+			<div class="aspect-square flex items-center justify-center text-sm text-gray-300">18</div>
+		</div>
+	</div>
+	<!-- Slots + Form -->
+	<div class="w-full md:w-80 p-8 bg-cream-dark/60 flex flex-col overflow-y-auto custom-scrollbar">
+		<h3 class="font-serif text-xl text-text-main mb-6">Jueves, 7 de Nov</h3>
+		<div class="space-y-3 mb-8">
+			<button type="button" class="w-full py-3 border border-primary text-primary rounded-lg text-sm font-medium hover:bg-primary hover:text-white transition-all">
+				09:00
+			</button>
+			<button type="button" class="w-full py-3 border border-primary bg-primary text-white rounded-lg text-sm font-medium">
+				10:30
+			</button>
+			<button type="button" class="w-full py-3 border border-primary text-primary rounded-lg text-sm font-medium hover:bg-primary hover:text-white transition-all">
+				11:45
+			</button>
+		</div>
+		<form class="space-y-6 pt-6 border-t border-gold/20" action="#" method="post">
+			<div class="space-y-2">
+				<label class="block text-xs uppercase tracking-widest font-bold text-text-main" for="nombre">
+					Nombre completo
+				</label>
+				<input
+					id="nombre"
+					name="nombre"
+					type="text"
+					placeholder="Ej. Javier Pérez"
+					class="w-full bg-white border-2 border-gray-200 rounded-xl px-4 py-3 text-base text-text-main placeholder:text-gray-400 focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
+				/>
+			</div>
+			<div class="space-y-2">
+				<label class="block text-xs uppercase tracking-widest font-bold text-text-main" for="email">
+					Email
+				</label>
+				<input
+					id="email"
+					name="email"
+					type="email"
+					placeholder="javier@empresa.com"
+					class="w-full bg-white border-2 border-gray-200 rounded-xl px-4 py-3 text-base text-text-main placeholder:text-gray-400 focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
+				/>
+			</div>
+			<div class="space-y-2">
+				<label class="block text-xs uppercase tracking-widest font-bold text-text-main" for="telefono">
+					Teléfono
+				</label>
+				<input
+					id="telefono"
+					name="telefono"
+					type="tel"
+					placeholder="+34 600 000 000"
+					class="w-full bg-white border-2 border-gray-200 rounded-xl px-4 py-3 text-base text-text-main placeholder:text-gray-400 focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
+				/>
+			</div>
+			<button
+				type="submit"
+				class="w-full bg-primary text-white py-4 rounded-full text-sm font-medium tracking-widest uppercase shadow-lg shadow-primary/20 hover:bg-primary/90 hover:scale-[1.02] transition-all"
+			>
+				Confirmar Reserva
+			</button>
+		</form>
+	</div>
+</div>

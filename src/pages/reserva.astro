@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeaderReserva from '../components/HeaderReserva.astro';
+import ReservaIntro from '../components/reserva/ReservaIntro.astro';
+import CalEmbed from '../components/reserva/CalEmbed.astro';
+---
+
+<Layout title="Reserva de Sesión de Diagnóstico | Liderar desde la Serenidad">
+	<div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+		<svg class="absolute -top-20 -right-20 w-[60%] h-[60%] opacity-[0.04] text-gold" viewBox="0 0 100 100">
+			<circle cx="50" cy="50" fill="none" r="45" stroke="currentColor" stroke-width="0.2"></circle>
+			<path d="M10,50 Q50,10 90,50 T10,50" fill="none" stroke="currentColor" stroke-width="0.1"></path>
+		</svg>
+		<svg class="absolute bottom-10 -left-10 w-[40%] h-[40%] opacity-[0.03] text-primary" viewBox="0 0 200 200">
+			<path d="M40,100 C20,80 20,40 50,40 C80,40 80,80 60,100 C80,120 80,160 50,160 C20,160 20,120 40,100 Z" fill="currentColor"></path>
+		</svg>
+	</div>
+	<div class="relative z-10 h-screen flex flex-col overflow-hidden">
+		<HeaderReserva />
+		<div class="pt-20 flex-1 flex flex-col min-h-0 overflow-hidden">
+			<main class="flex-1 min-h-0 overflow-hidden max-w-7xl mx-auto w-full px-4 md:px-6 py-4">
+				<div class="grid grid-cols-1 grid-rows-[auto_1fr] lg:grid-cols-12 lg:grid-rows-1 gap-6 lg:gap-8 h-full items-stretch">
+					<ReservaIntro />
+					<CalEmbed />
+				</div>
+			</main>
+			<footer class="flex-none py-3 border-t border-gold/5">
+				<div class="max-w-7xl mx-auto px-4 md:px-6 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-text-light font-light tracking-wide">
+					<p>© 2024 Tránsito Aracil • Todos los derechos reservados.</p>
+					<div class="flex gap-6">
+						<a class="hover:text-primary transition-colors uppercase tracking-widest" href="#">Privacidad</a>
+						<a class="hover:text-primary transition-colors uppercase tracking-widest" href="#">Contacto</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+</Layout>
