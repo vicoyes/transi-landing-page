@@ -1,0 +1,15 @@
+---
+import logo from '../assets/logo-horizontal.png.webp';
+---
+
+<header class="fixed top-0 w-full z-50 bg-white/50 backdrop-blur-sm border-b border-gold/10">
+	<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+		<a href="/" class="flex items-center gap-3">
+			<img src={logo.src} alt="Liderar desde la Serenidad" class="h-8 w-auto object-contain" width={logo.width} height={logo.height} />
+		</a>
+		<nav class="hidden md:flex items-center gap-8 text-xs uppercase tracking-[0.2em] font-medium text-text-light">
+			<a class="hover:text-primary transition-colors" href="/">El Programa</a>
+			<a class="hover:text-primary transition-colors" href="/metodo">Metodología</a>
+		</nav>
+	</div>
+</header>

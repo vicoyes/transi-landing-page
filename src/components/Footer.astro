@@ -1,15 +1,13 @@
 ---
+import logo from '../assets/logo-horizontal.png.webp';
 ---
 
 <footer class="bg-white border-t border-gray-100 pt-20 pb-10">
 	<div class="max-w-[1280px] mx-auto px-6">
 		<div class="flex flex-col md:flex-row justify-between items-center gap-10 mb-16">
-			<div class="flex items-center gap-3">
-				<div class="size-8 text-primary flex items-center justify-center">
-					<span class="material-symbols-outlined text-3xl font-light">spa</span>
-				</div>
-				<span class="font-serif text-xl text-text-main">Liderar desde la Serenidad</span>
-			</div>
+			<a href="/" class="flex items-center gap-3">
+				<img src={logo.src} alt="Liderar desde la Serenidad" class="h-8 w-auto object-contain" width={logo.width} height={logo.height} />
+			</a>
 			<div class="flex flex-wrap justify-center gap-8 text-sm font-medium text-text-light uppercase tracking-widest">
 				<a class="hover:text-primary transition-colors" href="/metodo">El Método</a>
 				<a class="hover:text-primary transition-colors" href="#">Testimonios</a>
