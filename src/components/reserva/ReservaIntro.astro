@@ -1,16 +1,17 @@
 ---
+import transiImage from '../../assets/transi.jpg';
 ---
 
 <div class="lg:col-span-5 flex flex-col gap-3 md:gap-4 min-h-0">
 	<div class="space-y-2 flex-none">
 		<div class="inline-block px-2.5 py-0.5 bg-gold/5 border border-gold/20 rounded-full">
-			<span class="text-[10px] uppercase tracking-[0.2em] text-gold font-semibold">Sesión Individual</span>
+			<span class="text-[10px] uppercase tracking-[0.2em] text-gold font-semibold">Sesión de diagnóstico gratuita</span>
 		</div>
 		<h1 class="text-[2rem] font-serif leading-tight text-text-main font-light">
 			Tu Primer Paso hacia <span class="italic text-primary">la Serenidad</span>
 		</h1>
 		<p class="text-[1.125rem] text-text-light font-light leading-snug max-w-md">
-			Reserva tu sesión de diagnóstico de 15 minutos para evaluar tu estado actual y ver cómo el programa puede transformar tu liderazgo.
+			Reserva tu <strong class="text-text-main">sesión gratuita</strong> de 15 minutos para evaluar tu estado actual y ver cómo el programa puede transformar tu liderazgo. Sin compromiso.
 		</p>
 	</div>
 	<div class="relative max-w-[400px] flex-none group">
@@ -18,8 +19,8 @@
 		<div class="aspect-[3/4] rounded-lg overflow-hidden shadow-xl warm-filter">
 			<img
 				alt="Tránsito Aracil"
-				class="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-500"
-				src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGfOXmKWJNgsVJQY_-r7WQMQYCv71WG_VRBRWXpduEY7vtXOgvxaxeRKmaMXWlMsoN-JW6IxiN9j2qbsCRr_5zkSlSCl9OeRE-a8bhnFdZuI3Dh9O8Oj1HnDIVwr6jH4Cf4j_M9GWje1ayP6L72djbWmVzzblGILVxg1fLjOwGKZUeBoXYu2vg4tw7ljVopId80yBjGRJvChC0cM8hvV88NROsph2SovZ9UAw9tvD9NKoz3EgXXFuQ2U6hr1oTVQnC9TM17rueGtw"
+				class="w-full h-full object-cover object-center grayscale-[0.2] hover:grayscale-0 transition-all duration-500"
+				src={transiImage.src}
 			/>
 		</div>
 		<div class="absolute -bottom-3 -right-3 bg-white p-3 rounded-lg shadow-lg border border-gold/10 max-w-[140px]">
@@ -30,7 +31,7 @@
 	<div class="space-y-1.5 flex-none pt-1">
 		<div class="flex items-center gap-2 text-xs text-text-light font-light">
 			<span class="material-symbols-outlined text-primary text-base">schedule</span>
-			<span>15 min • Videollamada</span>
+			<span>15 min · Gratuita · Videollamada</span>
 		</div>
 		<div class="flex items-center gap-2 text-xs text-text-light font-light">
 			<span class="material-symbols-outlined text-primary text-base">language</span>

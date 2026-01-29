@@ -1,0 +1,60 @@
+---
+const testimonios = [
+	{
+		quote: "Nunca una persona me había aportado tanto en tan poco tiempo. Para mí ha sido una bendición que nuestros caminos se encontraran, y así poder recibir la ayuda que necesitaba. Gracias Transi, gracias de corazón. Te has convertido en una maestra de vida para mí.",
+		author: "Javier Embasana",
+		initials: "JE",
+	},
+	{
+		quote: "Transi es una persona entrañable, empática y sobre todo una grandísima profesional. Te hace sentir muy bien desde el primer minuto lo cual hace que puedas confiar en ella sin dudar. Yo estoy encantada de que haya entrado en mi vida.",
+		author: "Sara Bernat Lopez",
+		initials: "SB",
+	},
+	{
+		quote: "Transi combina sus conocimientos profesionales con un acompañamiento muy cercano que permite a la persona aprender a gestionar cualquier situación que esté atravesando, gracias a la toma de conciencia de que cuenta con sus propios recursos. Gracias, Transi!",
+		author: "Nitza Gómez González",
+		initials: "NG",
+	},
+	{
+		quote: "Transi es una profesional muy completa que me ha ayudado a entender muchos procesos en mi vida y me sigue ayudando. Gracias a ella he aprendido a ser más libre.",
+		author: "Isabel Carmona",
+		initials: "IC",
+	},
+];
+---
+
+<section class="px-6 py-24 md:py-28 bg-[#F8F5FF] relative overflow-hidden">
+	<div class="absolute -top-40 -right-40 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[80px] pointer-events-none"></div>
+	<div class="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-gold/10 rounded-full blur-[80px] pointer-events-none"></div>
+	<div class="max-w-[1120px] mx-auto relative z-10">
+		<div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14 border-b border-gold/20 pb-10">
+			<div class="max-w-2xl">
+				<div class="flex items-center gap-3 mb-3">
+					<div class="h-px w-8 bg-gold"></div>
+					<span class="text-gold font-bold uppercase tracking-[0.2em] text-xs">Testimonios</span>
+				</div>
+				<h2 class="text-3xl md:text-4xl lg:text-5xl font-serif text-text-main leading-tight">
+					Lo que dicen quienes ya <span class="italic text-primary">transformaron</span> su liderazgo
+				</h2>
+			</div>
+		</div>
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+			{testimonios.map((t) => (
+				<article class="bg-white/70 backdrop-blur-md border border-white rounded-[2rem] p-8 hover:bg-white hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 group flex flex-col">
+					<div class="flex-1">
+						<span class="material-symbols-outlined text-primary/30 text-4xl font-thin mb-4 block">format_quote</span>
+						<blockquote class="text-text-light font-light leading-relaxed mb-6 italic border-l-2 border-primary/30 pl-5 py-1 bg-primary/5 rounded-r-lg">
+							{t.quote}
+						</blockquote>
+					</div>
+					<footer class="flex items-center gap-4 pt-4 border-t border-gold/10">
+						<div class="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center font-serif font-medium text-sm group-hover:bg-primary/15 transition-colors">
+							{t.initials}
+						</div>
+						<p class="font-serif text-text-main font-medium">{t.author}</p>
+					</footer>
+				</article>
+			))}
+		</div>
+	</div>
+</section>
