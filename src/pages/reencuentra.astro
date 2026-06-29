@@ -1,0 +1,80 @@
+---
+const checkoutUrl = 'https://buy.stripe.com/28E00kaga0xxc11bw75AQ03';
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="robots" content="noindex" />
+		<meta http-equiv="refresh" content={`0; url=${checkoutUrl}`} />
+		<link rel="canonical" href={checkoutUrl} />
+		<title>Reencuentra con tu ser | Checkout</title>
+		<script is:inline define:vars={{ checkoutUrl }}>
+			window.location.replace(checkoutUrl);
+		</script>
+		<style>
+			:root {
+				color-scheme: light;
+				font-family: Arial, Helvetica, sans-serif;
+				background: #f7f2ec;
+				color: #26211d;
+			}
+
+			body {
+				min-height: 100vh;
+				margin: 0;
+				display: grid;
+				place-items: center;
+				padding: 24px;
+			}
+
+			main {
+				width: min(100%, 520px);
+				text-align: center;
+			}
+
+			h1 {
+				margin: 0 0 12px;
+				font-size: clamp(28px, 6vw, 44px);
+				line-height: 1.05;
+				font-weight: 700;
+			}
+
+			p {
+				margin: 0 auto 24px;
+				max-width: 36rem;
+				font-size: 17px;
+				line-height: 1.5;
+				color: #5d5148;
+			}
+
+			a {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				min-height: 48px;
+				padding: 0 22px;
+				border-radius: 6px;
+				background: #2e5c55;
+				color: #fff;
+				font-size: 16px;
+				font-weight: 700;
+				text-decoration: none;
+			}
+
+			a:focus-visible {
+				outline: 3px solid #d6a95f;
+				outline-offset: 4px;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<h1>Reencuentra con tu ser</h1>
+			<p>Te estamos llevando al checkout seguro de Stripe.</p>
+			<a href={checkoutUrl}>Ir al checkout</a>
+		</main>
+	</body>
+</html>
